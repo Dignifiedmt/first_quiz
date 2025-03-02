@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Aid Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <!-- Start Screen -->
+    <div class="quiz-container" id="start-screen">
+        <h1>Welcome to the First Aid Quiz!</h1>
+        <hr><br>
+        <p>Did you know that WHO estimates that up to 59% of injury-related deaths could be prevented with timely first aid?</p>
+        <br>
+        <p><i><b>Test your knowledge and see how you can help save lives!</b></i></p>
+        
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" placeholder="Your Name">
+        <button onclick="startQuiz()">Start Quiz</button>
+    </div>
 
+    <!-- Quiz Screen -->
+    <div class="quiz-container" id="quiz-screen" style="display: none;">
+        <h1>Welcome, <span id="user-name"></span>! Ready to test your knowledge?</h1>
+        <br><br>
+        <p id="question"></p>
+        <div id="options-container"></div>
+        <div id="result"></div>
+        <button id="next-button" onclick="nextQuestion()" style="display: none;">Next Question</button>
+    </div>
+
+    <!-- Results Screen -->
+    <div class="quiz-container" id="results-screen" style="display: none;">
+        <h2>Quiz Over!</h2>
+        <p>Your score: <span id="score"></span></p>
+        <p id="percentage"></p>
+        <h3>Correct Answers:</h3>
+        <ul id="correct-answers"></ul>
+        <button onclick="restartQuiz()">Restart Quiz</button>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
