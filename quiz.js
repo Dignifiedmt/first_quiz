@@ -55,7 +55,7 @@ const questions = [
         options: ["If the person is not breathing", "If the person has chest pain", "If the person is unconscious", "All of the above"],
         correctAnswer: "If the person is not breathing"
     },
-    /*{
+    {
         question: "What is the first step in treating a burn?",
         options: ["Apply cold water", "Cover with a bandage", "Apply ice", "Place under a cold towel"],
         correctAnswer: "Apply cold water"
@@ -154,7 +154,7 @@ const questions = [
         question: "How do you treat a burn from a hot object?",
         options: ["Apply cold water", "Apply ice", "Place a bandage on it", "Cover with ointment"],
         correctAnswer: "Apply cold water"
-    },*/
+    },
 ];
 
 function startQuiz() {
